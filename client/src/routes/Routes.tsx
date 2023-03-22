@@ -5,12 +5,12 @@ import {
     Navigate,
     Link,
 } from 'react-router-dom';
-import Stays from '../components/Stays/Stays';
+import StaysHomePage from '../pages/StaysHomePage';
 
 export const AppRoutes = () => {
     return (
         <Routes>
-            <Route path='/' element={<Stays />}></Route>
+            <Route path='/' element={<StaysHomePage />}></Route>
             <Route path='*' element={<Navigate to='/' replace />}></Route>
         </Routes>
     );

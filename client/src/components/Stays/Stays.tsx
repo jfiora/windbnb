@@ -1,10 +1,13 @@
 import React from 'react';
-import Stay from './Stay/Stay';
+import StayComponent from './Stay/StayComponent';
+import { Stay } from '../../utils/types/Stay.type';
 
-const Stays = () => {
+const Stays = ({ stays }: { stays: Stay[] }) => {
     return (
         <div>
-            <h1>Stays</h1>
+            {stays.map((stay: any) => (
+                <StayComponent {...stay} />
+            ))}
         </div>
     );
 };
