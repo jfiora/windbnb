@@ -25,9 +25,6 @@ const StaysHomePage = () => {
     return (
         <div>
             <Navbar />
-            <div>
-                <span>{filteredStays.length}</span>
-            </div>
             <Stays stays={filteredStays} />
         </div>
     );

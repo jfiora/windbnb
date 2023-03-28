@@ -1,3 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import url('./styles/constants.css');
+
+@import url('./styles/stays.component.css');
 @import url('./styles/stay.component.css');

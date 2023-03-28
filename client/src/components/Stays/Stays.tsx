@@ -5,9 +5,15 @@ import { Stay } from '../../utils/types/Stay.type';
 const Stays = ({ stays }: { stays: Stay[] }) => {
     return (
         <div>
-            {stays.map((stay: any) => (
-                <StayComponent {...stay} />
-            ))}
+            <div className='stays-component-top-bar'>
+                <h1>Stays in Finland</h1>
+                <p>{stays.length > 12 ? '12+' : stays.length} stays</p>
+            </div>
+            <div className='stays-component-container'>
+                {stays.map((stay: any) => (
+                    <StayComponent {...stay} />
+                ))}
+            </div>
         </div>
     );
 };
