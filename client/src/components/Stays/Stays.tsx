@@ -10,8 +10,8 @@ const Stays = ({ stays }: { stays: Stay[] }) => {
                 <p>{stays.length > 12 ? '12+' : stays.length} stays</p>
             </div>
             <div className='stays-component-container'>
-                {stays.map((stay: any) => (
-                    <StayComponent {...stay} />
+                {stays.map((stay: Stay) => (
+                    <StayComponent {...stay} key={stay._id} />
                 ))}
             </div>
         </div>

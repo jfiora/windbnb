@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useFiltersStore from '../../../hooks/useFiltersStore';
+import searchIcon from '../../../assets/search.png';
 
 const Search = () => {
     const [loc, setLoc] = useState<string>('');
@@ -24,22 +25,20 @@ const Search = () => {
     };
 
     return (
-        <div>
-            <h1>Search</h1>
-            <div>
-                <button onClick={() => handleGuests(gue - 1)}>
-                    remove guest
-                </button>
-                <span>{gue}</span>
-                <button onClick={() => handleGuests(gue + 1)}>add guest</button>
-                <span>{location}</span>
-                <input
-                    type='text'
-                    value={loc}
-                    onChange={(e) => setLoc(e.target.value)}
-                />
-                <button onClick={searchFilters}>search</button>
-            </div>
+        <div className='search-container'>
+            <span>{location === '' ? 'Add location' : location}</span>
+            <span>Add guests</span>
+            {/* <input
+                type='text'
+                value={loc}
+                onChange={(e) => setLoc(e.target.value)}
+            /> */}
+            {/* <button onClick={() => handleGuests(gue - 1)}>remove guest</button>
+            <span>{gue}</span>
+            <button onClick={() => handleGuests(gue + 1)}>add guest</button> */}
+            <button onClick={searchFilters}>
+                <img src={searchIcon} />
+            </button>
         </div>
     );
 };

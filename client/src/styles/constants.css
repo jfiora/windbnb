@@ -6,11 +6,12 @@
     --black2: #4f4f4f;
     --grey: #828282;
     --grey2: #bdbdbd;
+    --grey3: #f2f2f2;
     --white: #ffffff;
 }
 
 #root {
-    max-width: 1440px;
+    max-width: 1378px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;

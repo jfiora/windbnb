@@ -4,7 +4,7 @@ import starIcon from '../../../assets/star.svg';
 
 const StayComponent = (stay: Stay) => {
     return (
-        <div key={stay._id} className='stay-component'>
+        <div className='stay-component'>
             <section className='stay-component-image-section'>
                 <img src={stay.photo} />
             </section>
