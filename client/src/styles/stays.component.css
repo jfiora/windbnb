@@ -7,8 +7,6 @@
 }
 
 .stays-component-container {
-    max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-gap: 1rem;
 }
