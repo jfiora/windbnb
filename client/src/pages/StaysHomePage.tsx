@@ -3,8 +3,8 @@ import Stays from '../components/Stays/Stays';
 import { Stay } from '../utils/types/Stay.type';
 
 import { data } from '../mocks/data';
-import Search from '../components/Navbar/Search/Search';
 import useFiltersStore from '../hooks/useFiltersStore';
+import Navbar from '../components/Navbar/Navbar';
 
 const StaysHomePage = () => {
     const [stays, setStays] = useState<Stay[]>(data);
@@ -24,7 +24,7 @@ const StaysHomePage = () => {
 
     return (
         <div>
-            <Search />
+            <Navbar />
             <div>
                 <span>{filteredStays.length}</span>
             </div>

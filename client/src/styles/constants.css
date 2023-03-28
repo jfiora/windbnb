@@ -1,0 +1,14 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    --orange: #eb5757;
+    --black: #333333;
+    --black2: #4f4f4f;
+    --grey: #828282;
+    --grey2: #bdbdbd;
+    --white: #ffffff;
+}
+
+#root {
+    font-family: 'Montserrat', sans-serif;
+}
